@@ -1,0 +1,31 @@
+.imgContainerGoodzyIdea
+{
+    height: 100%;
+    overflow: hidden;   
+}
+.imgGoodzyIdea
+{
+    object-fit: cover;
+    height: 40rem;
+}
+
+.divContainerGoodzyIdea
+{
+    background-color:saddlebrown;
+    color: white;
+}
+
+
+.buttonGoodzyIdea
+{
+    background-color: transparent;
+    color: white;
+    border: white 0.1rem solid;
+}
+.buttonGoodzyIdea:hover
+{
+    background-color: white;
+    color: saddlebrown;
+    border: saddlebrown 0.1rem solid;
+}
+

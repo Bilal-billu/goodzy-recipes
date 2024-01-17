@@ -1,0 +1,15 @@
+.containerFAQSuggestion 
+{
+    background-color: #F2EBE5;
+}
+
+.linkedFAQSuggestion 
+{
+    color: #A76E63;
+    ;
+}
+
+.linkedFAQSuggestion:hover 
+{
+    color: darksalmon;
+}

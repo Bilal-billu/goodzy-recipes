@@ -1,0 +1,21 @@
+.imgAuthRes
+{
+    object-fit:cover;
+    height: 15rem;
+}
+
+.paraAuthRes
+{
+    color: #4f5666;
+}
+
+.linkedAuthRes 
+{
+    color: #A76E63;
+    ;
+}
+
+.linkedAuthRes:hover 
+{
+    color: darksalmon;
+}

@@ -1,0 +1,51 @@
+.heroSectionMain {
+    background-image: url("https://olo-images-live.imgix.net/53/53d3a3a01b1f49c6b4bd74b412033a96.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=528&h=352&fit=crop&s=0f82bba7d4259008ae1218ee3025706d");
+    background-repeat: no-repeat;
+    background-position: 150% 0;
+    background-color: white;
+    background-size:contain;
+    height: 40rem;
+    overflow: hidden;
+    object-fit: contain;
+
+}
+
+.textContainerHeroSection {
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttonAllRecipes {
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-width: 0.1em;
+    box-shadow: none;
+}
+
+.buttonAllRecipes:hover {
+    background-color: black;
+    color: beige;
+}
+
+@media (max-width:900px) {
+    .heroSectionMain {
+        background-position: 100% 0%;
+        background-size: contain;
+        height: 30rem;
+        overflow: hidden;
+        object-fit: cover;
+        opacity: 70%;
+    }
+
+    .textContainerHeroSection {
+        left: 1rem;
+        width: 100%;
+        top: 8rem;
+    }
+}

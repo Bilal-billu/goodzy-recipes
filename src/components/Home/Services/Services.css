@@ -1,0 +1,28 @@
+h1
+{
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
+.cardDiv
+{
+    width: 30%;
+}
+
+.containerDiv
+{
+    height: 30rem;
+}
+@media (max-width:768) {
+    .containerDiv{
+        height: auto;
+    }
+    
+}
