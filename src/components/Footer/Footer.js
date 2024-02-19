@@ -10,7 +10,7 @@ export default function Footer() {
             "fa6-brands:pinterest"]; //Pinterest
         let socialIconList = [];
         for (let i = 0; i < iconList.length; i++) {
-            socialIconList.push(<Icons name={iconList[i]} />);
+            socialIconList.push(<Icons name={iconList[i]} key={i} />);
         }
         return socialIconList;
     }
@@ -65,8 +65,8 @@ export default function Footer() {
             </div>
             <div className='d-flex justify-content-around justify-content-center col-md-5'>
                 {/* Recepie Info */}
-                {linkrecipes.map((link) => {
-                    return (<Links linkName={link.text} path={link.path} />)
+                {linkrecipes.map((link, index) => {
+                    return (<Links linkName={link.text} path={link.path} key={index} />)
                 })}
 
             </div>
@@ -74,8 +74,8 @@ export default function Footer() {
                 <div className='border-1 border-top border-bottom border-top-white col-md-11 p-1 '>
                     <div className='d-flex justify-content-around  col-md-10'>
                         {/* Licensing and Information */}
-                        {linkLicensingAndInfo.map((link) => {
-                            return (<Links linkName={link.text} path={link.path} />)
+                        {linkLicensingAndInfo.map((link, index) => {
+                            return (<Links linkName={link.text} path={link.path} key={index} />)
                         })}
                     </div>
                 </div>

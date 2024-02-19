@@ -21,8 +21,8 @@ function Services() {
     ]
     return (
         <div className="d-flex flex-column flex-md-row justify-content-center align-items-center mx-3 my-5 my-md-0 mt-md-1 containerDiv">
-            {cardValues.map((card) => {
-                return (<ServiceCard icon={card.icon} heading={card.heading} paragraph={card.paragraph} />)
+            {cardValues.map((card, index) => {
+                return (<ServiceCard icon={card.icon} heading={card.heading} paragraph={card.paragraph} key={index} />)
             })}
         </div>
     );

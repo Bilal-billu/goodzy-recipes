@@ -23,8 +23,8 @@ function FeaturedRecipes() {
         <div className="d-flex flex-column  justify-content-center align-items-center my-5 my-md-0 mb-5 pb-1">
             <h1 className="h1 display-6 fw-bolder">Featured recipes</h1>
             <div className="d-flex flex-column flex-md-row  align-content-center ">
-                {featuredValues.map((card) => {
-                    return (<FeaturedRecipeCard card={card} />)
+                {featuredValues.map((card, index) => {
+                    return (<FeaturedRecipeCard card={card} key={index}/>)
                 })}
             </div>
 

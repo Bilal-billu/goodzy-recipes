@@ -47,9 +47,8 @@ function Navbar(props) {
 
                 <div
                     className="d-flex flex-column flex-md-row justify-content-start justify-content-md-left mx-3 my-4 my-md-0 align-items-strat align-items-md-center">
-                    {navBarLinks.map((link) => {
-                        { console.log(icon) }
-                        return (<NavigationLinks text={link.text} path={link.path} />)
+                    {navBarLinks.map((link, index) => {
+                        return (<NavigationLinks text={link.text} path={link.path} key={index} />)
 
                     })}
 

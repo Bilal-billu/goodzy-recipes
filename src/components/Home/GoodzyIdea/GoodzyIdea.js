@@ -25,11 +25,11 @@ function GoodzyIdea() {
             </div>
             <div className="col-md-5 d-flex flex-column m-3 me-md-5 p-md-4 pe-md-5">
                 <h1 className="h1 text-capitalize fw-bolder mb-md-4">Idea behind GOODZY</h1>
-                {smallIntro.map((value) => {
-                    return (<>
+                {smallIntro.map((value, index) => {
+                    return (<div key={index}>
                         <h4 className="text-capitalize fw-bold mt-md-5">{value.h3}</h4>
                         <p className="font fs-6">{value.p}</p>
-                    </>
+                    </div>
                     );
                 })}
                 <button className="p-2 px-md-4 mt-3 mt-md-5 col-md-4 fw-bold fs-5 buttonGoodzyIdea">Learn more &gt;</button>

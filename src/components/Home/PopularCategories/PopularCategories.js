@@ -31,8 +31,8 @@ function PopularCategories() {
         <div className="d-flex flex-column justify-content-center align-items-center my-5">
             <h1 className="h1 display-5 p-5">Popular Categories</h1>
             <div className="d-flex flex-row flex-wrap justify-content-center align-content-center">
-                {categories.map((card) => {
-                    return (<PopularCategoryCard categoryImage={card.image} categoryName={card.title} />)
+                {categories.map((card,index) => {
+                    return (<PopularCategoryCard categoryImage={card.image} categoryName={card.title} key={index}/>)
                 }
                 )}
             </div>

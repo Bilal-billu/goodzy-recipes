@@ -10,7 +10,6 @@ function FeaturedRecipeCard({ card }) {
         <div className="d-flex flex-column col-md-4 justify-content-center p-3 align-items-center cardContainerFeatured">
             <div className="imageContainerFeatured">
                 <img src={image} className="imageFeatured col-11" />
-                {console.log("Recipie:", newRec)}
                 {
                     newRec && <small className="px-1 pe-2 py-1 newFeatured">
                         <Icon icon="ph:lightning-fill" className="p me-1"/>
