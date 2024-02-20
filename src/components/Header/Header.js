@@ -59,6 +59,7 @@ function useWindowSize() {
     width: undefined,
     height: undefined,
   });
+  var  width;
 
   useEffect(() => {
     // Handler to call on window resize
@@ -78,7 +79,7 @@ function useWindowSize() {
 
     // Remove event listener on cleanup
     return () => window.removeEventListener("resize", handleResize);
-  }, []); // Empty array ensures that effect is only run on mount
+  }, [width]); // Empty array ensures that effect is only run on mount
 
 
   return windowSize;
