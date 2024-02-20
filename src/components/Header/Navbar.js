@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import NavigationLinks from "./NavigationLinks";
 import { Icon } from "@iconify/react";
 
